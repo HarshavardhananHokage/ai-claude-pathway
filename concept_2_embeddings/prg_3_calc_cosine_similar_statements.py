@@ -10,12 +10,22 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPEN_AI_KEY"))
 
+# texts = [
+#     "The weather is pleasant today.",
+#     "It’s a beautiful day outside.",
+#     "The weather feels really good.",
+#     "It’s nice and comfortable outdoors.",
+#     "Today’s weather is quite enjoyable."
+# ]
+
+# texts = [
+#     "can my landlord kick me out?",
+#     "grounds for eviction pursuant to landlord."
+# ]
+
 texts = [
-    "The weather is pleasant today.",
-    "It’s a beautiful day outside.",
-    "The weather feels really good.",
-    "It’s nice and comfortable outdoors.",
-    "Today’s weather is quite enjoyable."
+    "python programming",
+    "python snake"
 ]
 
 response = client.embeddings.create(
